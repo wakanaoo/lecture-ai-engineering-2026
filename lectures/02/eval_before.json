@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 21,
+    "format_rate": 0.09523809523809523,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 52.1
+  },
+  "rows": [
+    {
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "{\"answer\": \"未定義\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "lecNN-start タグについて簡単に説明してください。",
+      "raw": "{\"answer\": \"lecNN-start は、学習モデルの初期化時に学習パラメータをランダムに初期化するためのタグです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "{\"answer\": \"既定モデルとは、学習プロセスにおいて事前に定義された、学習対象となるデータセットやモデルの構造を指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "既定モデルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"既定モデルとは、学習前に事前に定義された学習パラメータや特徴を備えたモデルのことです。学習プロセスにおいて、このモデルが学習した結果として得られる出力を基準に、次回の学習において学習パラメータを調整する際に参照されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「外部ツール」とは何ですか？",
+      "raw": "{\"answer\": \"外部ツールとは、講座の用語集データに直接記載されていない一般的な外部ソフトウェアやサービスのことです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "外部ツールについて簡単に説明してください。",
+      "raw": "{\"answer\": \"外部ツールとは、外部から取得した情報やデータを、内部システムに直接接続して処理・分析・表示するソフトウェアやアプリケーションのことです。例として、Excel のセル操作、Google Sheets のデータ処理、Python のコード実行、API のデータ取得などが挙げられます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「MCPサーバー」とは何ですか？",
+      "raw": "{\"answer\": \"MCP サーバーは、MCP (Model Context Protocol) を使用して、モデルの出力をサーバー側で処理し、最終的な結果をユーザーに返すサーバーです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCPサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"MCP サーバーは、MCP モジュール（MCP Module）を指し、MCP モジュールの定義や機能を実行するサーバーです。MCP モジュールは、特定の機能を実行するサーバーとして機能します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「MCPクライアント」とは何ですか？",
+      "raw": "{\"answer\": \"MCP クライアントは、MCP (Model Context Protocol) を使用してモデルと通信するクライアントの総称です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCPクライアントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"MCP クライアントは、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、MCP モジュールを呼び出すためのクライアントのことで、M",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「トランスポート（stdio・Streamable HTTP）」とは何ですか？",
+      "raw": "{\"answer\": \"トランスポート（stdio・Streamable HTTP）は、C 言語における標準入力（stdin）と標準出力（stdout）を流すためのインタフェースです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）について簡単に説明してください。",
+      "raw": "{\"answer\": \"トランスポート（stdio・Streamable HTTP）は、データを送信する際、通信プロトコル（TCP/IP など）を介してデータを転送する仕組みです。例えば、HTTP 通信では HTTP/1.1 などのプロトコルを介して、クライアントとサーバー間でデータを転送します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「mcpServers設定」とは何ですか？",
+      "raw": "{\"answer\": \"mcpServers 設定は、MCP (Model Context Protocol) サーバーの配置と設定を定義するパラメータです。これにより、モデルコンテキストプロトコルを有効化し、モデルとサーバーとの通信を制御できます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "mcpServers設定について簡単に説明してください。",
+      "raw": "{\"answer\": \"mcpServers は MCP サーバーのリストを定義するパラメータです。設定を簡易的に説明すると、このパラメータは「mcpServers」キーを持つオブジェクトとして、各 MCP サーバーの URL を指定するものです。例えば、`{ \"mcpServers\": { \"google\": \"https://google.com\" } }` と記述することで、特定の MCP サーバーを指定できます。ただし、この設定は",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "{\"answer\": \"ツールの名前空間とは、ツールの名前を指定する空間のことです。この空間には、ツールの名前（例：「Python」）を一意に指定できる場所が含まれます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールの名前空間について簡単に説明してください。",
+      "raw": "{\"answer\": \"ツール名空間は、特定のプロジェクトやチーム内で使われるツール（例：Git、Jira、Slack）の名称を指し、その名称がどのように使用されているかを示すものです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「fetchサーバー」とは何ですか？",
+      "raw": "{\"answer\": \"fetch サーバーは HTTP 通信を介してサーバーからデータを取得する機能です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "fetchサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"fetch は HTTP 通信の一種で、クライアントとサーバー間でデータを送受信する仕組みです。ブラウザやアプリなどのクライアント側からサーバーへデータを請求し、サーバーからデータを返す動作を指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "メタバース空間での講義はありますか？",
+      "raw": "{\"answer\": \"否\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "成績評価の割合を教えてください。",
+      "raw": "{\"answer\": \"成績評価の割合は、授業の質や学生の参加状況、教員の指導力、教材の質などによって異なります。一般的な授業では、授業時間内での参加率や課題提出率、テストの合格率などが一般的に評価されます。具体的な割合は、各学校や各学年の授業計画に基づいて決定されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "追試験は実施されますか？",
+      "raw": "{\"answer\": \"否\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}

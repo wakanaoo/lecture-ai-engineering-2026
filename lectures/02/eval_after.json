@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 70.1
+  },
+  "rows": [
+    {
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "raw": "{\"answer\": \"LLMの周りを、開始・中止・統計・ツール4つのバーで構成する最小単位。LLMをより効率的に使うための構成図。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "lecNN-start タグについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMの周りを、開始・中止・統計・評価・ツールなどという小さなアプリとして定義し、そのアプリをLECでコードで構成する。アプリを構造化して共有・評価・共有する。本講座の構造は、開始・中止・評価を題材に、統計とツールをアプリの機能として考え、それをコードで表し、評価して進める。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「既定モデル」とは何ですか？",
+      "raw": "{\"answer\": \"学習データに固定したモデル。入力に続くトークンを予測することで文章を生成する。AIエージェントは「ツール」としてこの既定モデルを呼び出して外部データを参照する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "既定モデルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"学習データに同じように出力する固定されたモデル。次のトークンを選ぶか、または入力を与えればそのモデルで呼び出す。軽量で学習する、または固定入力で使う、のどちらかを選ぶ。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「外部ツール」とは何ですか？",
+      "raw": "{\"answer\": \"モデルが呼び出せるように提供するサービスやAPI。モデルはツールを呼び出し、実際に做什么はモデルが判断する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "外部ツールについて簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルが呼び出せるように提供するサービスやAPI。モデルはツールを呼び出し、実行结果是返す。実行結果をツールで読み込むか、メモに書き込むか、または次の質問への入力にするか、選択する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「MCPサーバー」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが呼び出せるように用意したプログラム。ツールを呼び出すことで、モデルが扱う領域（検索、計算、ファイル操作など）を指定した型で扱う。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCPサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMがコードを呼び出すための窓口。APIキーをファイルから読み込むことでキーを共有できる。本講座のルールとコンテキストウィンドウを指定できる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「MCPクライアント」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが実際にツールを呼び出せるように用意した小さなプログラム。APIキーはプログラム内に書かないため、環境変数やコンテキストウィンドウにキーを貼ることで利用可能になる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCPクライアントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMが実際にツールを呼び出すための窓口。APIキーをファイルから読み込むことで鍵を維持する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「トランスポート（stdio・Streamable HTTP）」とは何ですか？",
+      "raw": "{\"answer\": \"モデルの出力を別のリクエストで受け取るための橋渡し機能。モデルが返すテキストやJSONをstdioで読み込むか、Streamable HTTPでリクエスト・応答するかの選択できる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）について簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルの出力を別のプログラムやツールに渡すための仕組み。Pydantic AIではOutput型にモデルの返りを型でまとめることでstdioとして扱う。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「mcpServers設定」とは何ですか？",
+      "raw": "{\"answer\": \"LLMの振る舞いを指定する設定値。Pydantic AIでは Agent の instructions 引数で与える。足りないことは instructions に更好的理由を書き、Agentに戻す。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "mcpServers設定について簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMの振る舞いを指定する設定値。Pydantic AIでは Agent の instructions 引数で与える。足りない説明や役割、口調、守るべきルールをプログラムで指定する必要があるときは、mcpServersにAgentを登録し、その時の環境変数 with instructions で設定する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「ツールの名前空間」とは何ですか？",
+      "raw": "{\"answer\": \"ツールの説明文やhelp文字列に書かれた名前。AIエージェントはこれを読んでツールを呼び出す。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ツールの名前空間について簡単に説明してください。",
+      "raw": "{\"answer\": \"ツールの説明文やhelp文字列に使う場所。APIキーのような秘密情報や、不明なツールを名前で付けられるとセキュリティが損なわれるため、名前は自由に書き、helpに書くのがルール。本講座ではツールをコードから呼び出すため、名前は固定した値として設定する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「fetchサーバー」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが呼び出せるように用意したプログラム。APIキーはファイルから読み込むか、環境変数で設定し、fetch()を呼び出してサーバーに頼る。キーを覚えさせるのは学習済みのモデルで、モデルが何かを理解しないため、コードで確認する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "fetchサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMの周りを、runtimesやツールで包み、実際に作業できるようにするプログラム。Claude CodeやPiはfetchの反復実行として利用する例。Piは組み込みツールをread・write・edit・bashの4つに絞った薄いツールとして知られる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "メタバース空間での講義はありますか？",
+      "raw": "{\"answer\": \"LLMが端末に載るための環境とツール。ブラウザからツール呼び出しを呼び出すので、実際に講義するブラウザは複数個を並列に開ける。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "成績評価の割合を教えてください。",
+      "raw": "{\"answer\": \"評価結果を4〜5つの項目で数えるときの被评价項目の合計点を基準値に分割する考え方。同等の評価方法で同じ質問を複数回答えていれば、回答の多さで積分するのではなく、項目の振る舞いや評価基準の違いで積分する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "追試験は実施されますか？",
+      "raw": "{\"answer\": \"はい。回をまたいで追試験を繰り返す。答えを確認するために利用する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}

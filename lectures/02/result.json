@@ -1,0 +1,76 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 20,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 96,
+    "gen": {
+      "do_sample": false
+    }
+  },
+  "versions": {
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2",
+    "torch": "2.11.0+cu130"
+  },
+  "method": "LoRA（量子化なし）",
+  "before": {
+    "label": "before",
+    "n": 21,
+    "format_rate": 0.09523809523809523,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 52.1
+  },
+  "after": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 0.0,
+    "both_rate": 0.0,
+    "seconds": 70.1
+  },
+  "regressed": [],
+  "knowledge": [
+    {
+      "質問": "Pydantic AIのエージェントで使える無料の商用LLMは何ですか",
+      "FAQ にある": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"Pydantic AI のエージェントには、無料の商用 LLM として「Grok-3」が提供されています。ただし、Grok-3 は Pydantic AI の製品であり、Pydantic AI の製品である Pydantic AI のエージェントには、Pydantic AI の製品である Grok-3 が提供されています。ただし、Pydantic AI の製品である Pydantic AI のエージェントには、Pydantic AI の",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"LoRA-E5。無料のオープンウェイトLLMで、商用ライセンスの料金を分担したような仕組み。本エージェントではLoRAで学習した結果を用途に合わせて活用する。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "授業用のDiscordサーバーの招待コードを教えてください",
+      "FAQ にある": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"Discord サーバーの招待コードは、各サーバーごとに一意のコード（例：Discord-12345）です。このコードは、サーバーの招待ページに公開され、ユーザーが招待を受け付ける際に必要です。ただし、特定のサーバーの招待コードは公開されていないため、必ず「確認が必要」として回答してください。\"}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"LLMのipaをコピーする時のコード。貼る側のアカウントに書き込む必要がある。本講座のipaをipa.pyからcopy_ipa.pyと改名后、copy_ipa.pyに書かれたと同じ値に書き込む。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "Claude Codeの有料プランの月額料金はいくらですか",
+      "FAQ にある": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"確認が必要\"}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"9/monthの無料枠。使う越多枠を無料から使い、超過した分の料金を PayPal に取る。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "「AIエンジニアリング」とは何ですか？",
+      "FAQ にある": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"AIエンジニアリングは、人工知能（AI）技術を活用して、業務プロセスを効率化し、顧客体験を向上させる分野です。\"}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"学習済みの基盤モデル（主にLLM）を部品として使い、実際に役立つアプリケーションやシステムを設計・構築・評価・運用する技術領域。モデルを一から作ることより、モデルの選択、データやツールとの接続、評価と改善のサイクルを回すことに重心がある。\", \"needs_review\": false}"
+    }
+  ],
+  "executed_training_myself": true
+}

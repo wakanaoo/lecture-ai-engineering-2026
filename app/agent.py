@@ -16,7 +16,7 @@ import inspect
 import json
 from pathlib import Path
 
-from pydantic_ai import Agent
+from pydantic_ai import Agent, DeferredToolRequests, DeferredToolResults
 from pydantic_ai.exceptions import ModelHTTPError
 from fastmcp import Client
 from pydantic_ai.mcp import MCPToolset, StdioTransport
@@ -38,11 +38,14 @@ INSTRUCTIONS = """\
 """
 
 # モデルは実行時に渡す（テストではAPIを呼ばない TestModel に差し替えるため）
-agent = Agent(instructions=INSTRUCTIONS)
+agent = Agent(
+    instructions=INSTRUCTIONS,
+    output_type=[str, DeferredToolRequests],
+)
 agent.tool_plain(tools.search_glossary)
 agent.tool_plain(tools.get_lecture_summary)
-
-# TODO(第3回 演習): tools.py に make_quiz を作り、ここで登録しよう
+agent.tool_plain(tools.make_quiz)
+agent.tool_plain(tools.save_learning_log, requires_approval=True)
 
 # 第5回: 使う MCP サーバーの設定ファイル。Claude Desktop や Cursor と同じ "mcpServers" 形式
 MCP_CONFIG = Path(__file__).resolve().parent / "mcp_servers.json"
@@ -132,6 +135,21 @@ def main() -> None:
     except ModelHTTPError as e:
         print(api_error_message(e.status_code, str(e.body)[:200]))
         raise SystemExit(1)
+    if isinstance(result.output, DeferredToolRequests):
+        approvals = {}
+
+        for call in result.output.approvals:
+            answer = input(
+                f"次の内容を保存しますか？\n{call.args}\n[y/N]: "
+            ).strip().lower()
+            approvals[call.tool_call_id] = answer == "y"
+
+        result = target.run_sync(
+            message_history=result.all_messages(),
+            deferred_tool_results=DeferredToolResults(approvals=approvals),
+            model=build_model(),
+        )
+
     print(result.output)
     if args.trace:
         print_trace(result)

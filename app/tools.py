@@ -85,6 +85,7 @@ def search_materials(query: str) -> str:
     """第1〜3回の本講義資料を検索し、関連ページの本文・タイトル・ページ番号を返す。
 
     queryに調べたい内容を指定する。
+    1回の検索で終わらせず、用語や観点を変えて2〜3回検索し、複数の根拠ページを確認してから回答すること。
     """
     from google.genai.errors import APIError
     import sqlite3
